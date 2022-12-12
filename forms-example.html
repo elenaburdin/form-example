@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <form action="http://www.example.com/subscribe.php">
+        <fieldset>
+            <legend>Your Details:</legend>
+            <label for="username">Name:</label>
+            <input type="text" name="username" id="username" maxlength="30" size="30">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" maxlength="30" size="30">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Your Review:</legend>
+            <br>
+            <label for="hear-about">How did you hear about us?</label>
+            <select name="referrer" id="hear-about">
+                <option value="google">Google</option>
+                <option value="facebook">Facebook</option>
+                <option value="instagram">Instagram</option>
+            </select>
+            <br>
+            <p>Would you visit again?</p>
+            <label for="rating">Yes</label>
+            <input type="radio" name="rating" id="rating" value="y">
+            <label for="radio">No</label>
+            <input type="radio" name="rating" id="rating" value="n">
+            <label for="radio">Maybe</label>
+            <input type="radio" name="rating" id="rating" value="m">
+            <br>
+            <p>Comments</p>
+            <textarea name="comments" id="comments" cols="60" rows="5"></textarea>
+            <br>
+            <input type="checkbox" name="signup" id="signup" checked>
+            <label for="signup">Sign me up for email updates</label>
+            <br>
+            <input type="submit" name="submit" id="submit" value="Submit review">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
